@@ -1,0 +1,15 @@
+
+
+
+<h1>Bugs</h1>
+
+<ul>
+  <% @bugs.each do |bug| %>
+    <li>
+      <%=link_to bug.title,bug %>
+      <%=link_to bug.description,bug %>
+
+    </li>
+  <% end %>
+</ul>
+<%= link_to "New bug", new_bug_path %>

@@ -1,0 +1,25 @@
+<%= form_with model: project do |form| %>
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+  
+   <div class="field">
+    <%= form.label :assigned_user_role %>
+    <%= form.select :assigned_user_role, options_for_select(['developer', 'qa']), { prompt: 'Select a role' } %>
+    
+  </div>
+
+  
+<% if @project.user_id.present? %>
+    <div class="field">
+      <p>Assigned User: <%= @project.user.name %></p>
+    </div>
+<% end %>
+
+
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

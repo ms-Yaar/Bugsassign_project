@@ -1,0 +1,33 @@
+=> 
+[[32m#<Bug:0x00007f836d73ab70[0m
+  id: [34m[1m1[0m,
+  title: [31m[1m"[0m[31mthis is new bugs by shehar nand guan[0m[31m[1m"[0m,
+  description: [31m[1m"[0m[31mwhy not this is going to be going[0m[31m[1m"[0m,
+  project_id: [34m[1m1[0m,
+  user_id: [34m[1m4[0m,
+  created_at: Wed, 21 Feb 2024 07:16:32.924395000 UTC +00:00,
+  updated_at: Thu, 22 Feb 2024 08:27:53.053906000 UTC +00:00[32m>[0m,
+ [32m#<Bug:0x00007f836c1973e0[0m
+  id: [34m[1m7[0m,
+  title: [31m[1m"[0m[31mwe[0m[31m[1m"[0m,
+  description: [31m[1m"[0m[31mwewea[0m[31m[1m"[0m,
+  project_id: [34m[1m1[0m,
+  user_id: [34m[1m4[0m,
+  created_at: Thu, 22 Feb 2024 08:18:51.662752000 UTC +00:00,
+  updated_at: Thu, 22 Feb 2024 08:18:51.662752000 UTC +00:00[32m>[0m,
+ [32m#<Bug:0x00007f836c196968[0m
+  id: [34m[1m8[0m,
+  title: [31m[1m"[0m[31mwe[0m[31m[1m"[0m,
+  description: [31m[1m"[0m[31mcfgvbh[0m[31m[1m"[0m,
+  project_id: [34m[1m1[0m,
+  user_id: [34m[1m4[0m,
+  created_at: Thu, 22 Feb 2024 08:23:19.823072000 UTC +00:00,
+  updated_at: Thu, 22 Feb 2024 08:23:19.823072000 UTC +00:00[32m>[0m,
+ [32m#<Bug:0x00007f836c196698[0m
+  id: [34m[1m10[0m,
+  title: [31m[1m"[0m[31mfgvh[0m[31m[1m"[0m,
+  description: [31m[1m"[0m[31mcfvgb[0m[31m[1m"[0m,
+  project_id: [34m[1m2[0m,
+  user_id: [34m[1m4[0m,
+  created_at: Thu, 22 Feb 2024 08:31:14.155376000 UTC +00:00,
+  updated_at: Thu, 22 Feb 2024 08:31:14.155376000 UTC +00:00[32m>[0m]

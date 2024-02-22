@@ -1,0 +1,37 @@
+<h1>Welcome to the project</h1>
+<% if user_signed_in? %>
+  <p>Signed in as <%= current_user.role %>.</p>
+  <%= button_to 'Sign out', destroy_user_session_path, method: :delete, class: 'btn btn-danger' %>
+<% else %>
+  <%= button_to 'Sign in', new_user_session_path, class: 'btn btn-primary' %>
+<% end %>
+
+<h1>Projects</h1>
+
+<ul data-turbo-frame="projects">
+  <% @projects.each do |project| %>
+    <% if can? :read, project %>
+      <li>
+        <%= link_to project.name, project %>
+        <ul>
+          <% project.bugs.each do |bug| %>
+            <% if can? :read, bug %>
+              <li><%= bug.title %> User: <%= bug.user.name %></li>
+              
+            <% end %>
+          <% end %>
+        </ul>
+      </li>
+    <% end %>
+  <% end %>
+</ul>
+
+<% if can? :create, Project %>
+  <%= link_to "New project", new_project_path %>
+
+  <div style="margin-top: 50px;"></div>
+<% end %>
+
+<% if can? :create, Bug %>
+  <%= link_to "New Bug", new_bug_path, class: 'btn btn-primary' %>
+<% end %>
